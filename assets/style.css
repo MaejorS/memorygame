@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing;
+}
+
+body {
+    background-color: #235789;
+}
+
+header {
+    background: white;
+}
+
+header > h1 {
+    color: #2d3047;
+    text-align: center;
+    font-family: Asap, sans-serif;
+}
