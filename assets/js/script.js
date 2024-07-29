@@ -16,3 +16,23 @@ rock_div.addEventListener('click', function()
 {
     console.log("You clicked on rock");
 })
+
+paper_div.addEventListener('click', function()
+{
+    console.log("You clicked on rock");
+})
+
+scissors_div.addEventListener('click', function()
+{
+    console.log("You clicked on rock");
+})
+
+lizard_div.addEventListener('click', function()
+{
+    console.log("You clicked on rock");
+})
+
+spock_div.addEventListener('click', function()
+{
+    console.log("You clicked on rock");
+})
