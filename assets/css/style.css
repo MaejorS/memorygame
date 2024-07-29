@@ -7,6 +7,7 @@
 
 body {
     background-color: #235789;
+    font-family: Asap, sans-serif;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
 header > h1 {
     color: #2d3047;
     text-align: center;
-    font-family: Asap, sans-serif;
 }
 
 .score-area {
@@ -28,7 +28,6 @@ header > h1 {
     border-radius: 4px;
     text-align: center;
     padding: 15px 20px;
-    font-family: Asap, sans-serif;
     position: relative;
 }
 
@@ -37,7 +36,6 @@ header > h1 {
     color: white;
     font-size: 14px;
     padding: 2px 10px;
-    font-family: Asap, sans-serif;
 }
 
 #user-label {
@@ -62,7 +60,6 @@ header > h1 {
 
 .result > p {
     text-align: center;
-    font-family: Asap, sans-serif;
     font-weight: bold;
 
     
@@ -92,7 +89,6 @@ header > h1 {
 #hype-message {
     text-align: center;
     color: white;
-    font-family: Asap, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
