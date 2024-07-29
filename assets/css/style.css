@@ -69,6 +69,7 @@ header > h1 {
 }
 
 .select-choice {
+    margin-top: 50px;
     text-align: center;
     margin: 50px 0;
     
@@ -88,3 +89,10 @@ header > h1 {
     background: #5BC0EB;
 }
 
+#hype-message {
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
