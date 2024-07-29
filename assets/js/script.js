@@ -1,3 +1,5 @@
+// storing all of this in variables for later use. caching the dom
+
 const userScore = 0;
 const computerScore = 0;
 const playerScore_span = document.getElementById("player-score");
@@ -9,3 +11,8 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
+
+rock_div.addEventListener('click', function()
+{
+    console.log("You clicked on rock");
+})
