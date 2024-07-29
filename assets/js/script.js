@@ -14,6 +14,11 @@ const spock_div = document.getElementById("spock");
 
 // Main function with Event listners for rock paper scissors lizard spock icons
 
+function game(userChoice) {
+    console.log("poop" + userChoice);
+}
+
+
 function main() {
     rock_div.addEventListener('click', function()
     {
@@ -40,3 +45,5 @@ function main() {
         game("spock");
     })
 }
+
+main();
