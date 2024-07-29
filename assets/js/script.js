@@ -12,27 +12,29 @@ const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
 
+// Event listners for rock paper scissors lizard spock icons
+
 rock_div.addEventListener('click', function()
 {
-    console.log("You clicked on rock");
+    game("rock");
 })
 
 paper_div.addEventListener('click', function()
 {
-    console.log("You clicked on rock");
+    game("paper");
 })
 
 scissors_div.addEventListener('click', function()
 {
-    console.log("You clicked on rock");
+    game("scissors");
 })
 
 lizard_div.addEventListener('click', function()
 {
-    console.log("You clicked on rock");
+    game("lizard");
 })
 
 spock_div.addEventListener('click', function()
 {
-    console.log("You clicked on rock");
+    game("spock");
 })
