@@ -21,8 +21,21 @@ function getComputerChoice() {
     return selectChoice[randomNumber];
 }
 
+function win() {
+    userScore++
+    console.log("win");
+    console.log(userScore);
+}
 
-// Fuction is for user's choice
+function lose() {
+
+}
+
+function draw() {
+    console.log("draw")
+}
+
+// Fuction with switch statement to compare user vs computer choice
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
@@ -36,7 +49,7 @@ function game(userChoice) {
         case 'lizardpaper':
         case 'paperspock':
         case 'spockrock':
-            console.log("USER WINS!");
+            win();
             break;
         case 'scissorsrock':
         case 'paperscissors':
@@ -48,14 +61,14 @@ function game(userChoice) {
         case 'paperlizard':
         case 'spockpaper':
         case 'rockspock':
-            console.log("COMPUTER WINS!");
+            lose();
             break;
         case 'rockrock':
         case 'paperpaper':
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            console.log("IT'S A TIE!");
+            draw();
             break;
     }
 }
