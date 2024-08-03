@@ -11,6 +11,7 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
+const playAgainButton = document.getElementById("play-again-button");
 
 /**
  * allows computer to make random selection between 1 & 5 using the array stored in selectChoice
@@ -21,23 +22,54 @@ function getComputerChoice() {
     return selectChoice[randomNumber];
 }
 
-function win(userChoice, computerChoice) {
-    computerScore++;
-    playerScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " is defeated by " + computerChoice + " . YOU LOSE!!!";
-    document.getElementById(userChoice).classList.add('green-glow');
+function checkGameOver() {
+    if (userScore === 20) {
+        gameOver("Congratulations, you beat a bot.");
+    } else if (computerScore === 20) {
+        gameOver("Game over, you've been had by a robot.");
+    }
 }
 
-function lose(userChoice, computerChoice) {
+function win(userChoice, computerChoice) {
+    const userChoice_div = document.getElementById(userChoice);
     userScore++;
     playerScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!"
+    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!";
+    userChoice_div.classList.add('green-glow');
+    setTimeout(function() { userChoice_div.classList.remove('green-glow') }, 2000);
+    checkGameOver();
+}
+
+function lose(userChoice, computerChoice) {
+    const userChoice_div = document.getElementById(userChoice);
+    computerScore++;
+    playerScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = userChoice + " is defeated by " + computerChoice + " . YOU LOSE!!!"
+    userChoice_div.classList.add('red-glow');
+    setTimeout(function() { userChoice_div.classList.remove('red-glow') }, 2000);
+    checkGameOver();
 }
 
 function draw(userChoice, computerChoice) {
+    const userChoice_div = document.getElementById(userChoice);
     result_p.innerHTML = userChoice + " vs " + computerChoice + " ? TIE!!!"
+    userChoice_div.classList.add('gray-glow');
+    setTimeout(function() { userChoice_div.classList.remove('gray-glow') }, 2000);
+}
+
+function gameOver(message) {
+    result_p.innerHTML = message;
+    // Hide the game choices
+    rock_div.style.display = 'none';
+    paper_div.style.display = 'none';
+    scissors_div.style.display = 'none';
+    lizard_div.style.display = 'none';
+    spock_div.style.display = 'none';
+
+    // Show the play again button
+    playAgainButton.style.display = 'block';
 }
 
 // Fuction with switch statement to compare user vs computer choice
@@ -77,6 +109,12 @@ function game(userChoice) {
             break;
     }
 }
+
+// Add event listener to the "Play Again" button
+playAgainButton.addEventListener('click', function() {
+    // Reload the page
+    window.location.reload();
+});
 
 // Main function with Event listners for rock paper scissors lizard spock icons
 function main() {

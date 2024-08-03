@@ -100,6 +100,16 @@ header > h1 {
     font-size: 20px;
 }
 
+#play-again-button {
+    text-align: center;
+    color: darkslategray;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-color: lavenderblush;
+    border-radius: 5%;
+}
+
 /*styling for user win and user lose effect*/
 .green-glow {
     border: 4px solid #4dcc7d;
@@ -114,4 +124,23 @@ header > h1 {
 .gray-glow {
     border: 4px solid #464647;
     box-shadow: 0 0 10px #25292b;
+}
+
+/*styling for play again button*/
+
+#play-again-button {
+    text-align: center;
+    color: darkslategray;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-color: lavenderblush;
+    border-radius: 5%;
+}
+
+.gameoverbutton {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
 }
