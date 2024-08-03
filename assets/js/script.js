@@ -24,6 +24,40 @@ function getComputerChoice() {
 
 // Fuction is for user's choice
 function game(userChoice) {
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+        case 'rockscissors':
+        case 'scissorspaper':
+        case 'paperrock':
+        case 'rocklizard':
+        case 'lizardspock':
+        case 'spockscissors':
+        case 'scissorslizard':
+        case 'lizardpaper':
+        case 'paperspock':
+        case 'spockrock':
+            console.log("USER WINS!");
+            break;
+        case 'scissorsrock':
+        case 'paperscissors':
+        case 'rockpaper':
+        case 'lizardrock':
+        case 'spocklizard':
+        case 'scissorsspock':
+        case 'lizardscissors':
+        case 'paperlizard':
+        case 'spockpaper':
+        case 'rockspock':
+            console.log("COMPUTER WINS!");
+            break;
+        case 'rockrock':
+        case 'paperpaper':
+        case 'scissorsscissors':
+        case 'lizardlizard':
+        case 'spockspock':
+            console.log("IT'S A TIE!");
+            break;
+    }
 }
 
 // Main function with Event listners for rock paper scissors lizard spock icons
