@@ -22,18 +22,21 @@ function getComputerChoice() {
 }
 
 function win(userChoice, computerChoice) {
+    computerScore++;
+    playerScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = userChoice + " is defeated by " + computerChoice + " . YOU LOSE!!!";
+}
+
+function lose(userChoice, computerChoice) {
     userScore++;
     playerScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!";
+    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!"
 }
 
-function lose() {
-
-}
-
-function draw() {
-    console.log("draw")
+function draw(userChoice, computerChoice) {
+    result_p.innerHTML = userChoice + " vs " + computerChoice + " ? TIE!!!"
 }
 
 // Fuction with switch statement to compare user vs computer choice
