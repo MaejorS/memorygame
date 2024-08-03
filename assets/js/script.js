@@ -1,7 +1,7 @@
 // storing all of this in variables for later use. caching the dom
 
-const userScore = 0;
-const computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 const playerScore_span = document.getElementById("player-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreArea_div = document.querySelector(".score-area");
@@ -22,7 +22,7 @@ function getComputerChoice() {
 }
 
 function win() {
-    userScore++
+    userScore++;
     console.log("win");
     console.log(userScore);
 }
