@@ -5,7 +5,7 @@ let computerScore = 0;
 const playerScore_span = document.getElementById("player-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreArea_div = document.querySelector(".score-area");
-const result_div = document.querySelector(".result");
+const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
@@ -21,10 +21,11 @@ function getComputerChoice() {
     return selectChoice[randomNumber];
 }
 
-function win() {
+function win(userChoice, computerChoice) {
     userScore++;
-    console.log("win");
-    console.log(userScore);
+    playerScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!";
 }
 
 function lose() {
@@ -49,7 +50,7 @@ function game(userChoice) {
         case 'lizardpaper':
         case 'paperspock':
         case 'spockrock':
-            win();
+            win(userChoice, computerChoice);
             break;
         case 'scissorsrock':
         case 'paperscissors':
@@ -61,14 +62,14 @@ function game(userChoice) {
         case 'paperlizard':
         case 'spockpaper':
         case 'rockspock':
-            lose();
+            lose(userChoice, computerChoice);
             break;
         case 'rockrock':
         case 'paperpaper':
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            draw();
+            draw(userChoice, computerChoice);
             break;
     }
 }
