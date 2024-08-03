@@ -26,6 +26,7 @@ function win(userChoice, computerChoice) {
     playerScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = userChoice + " is defeated by " + computerChoice + " . YOU LOSE!!!";
+    document.getElementById(userChoice).classList.add('green-glow');
 }
 
 function lose(userChoice, computerChoice) {
