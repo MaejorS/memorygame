@@ -11,6 +11,7 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 const lizard_div = document.getElementById("lizard");
 const spock_div = document.getElementById("spock");
+const hypeMessage_div = document.getElementById("hype-message")
 const playAgainButton = document.getElementById("play-again-button");
 
 /**
@@ -25,9 +26,9 @@ function getComputerChoice() {
 // Function checks if game is over if user or computer reaches 20 points
 function checkGameOver() {
     if (userScore === 20) {
-        gameOver("Congratulations, you beat a bot 🤖.");
+        gameOver("Congratulations, you beat a bot 🤖");
     } else if (computerScore === 20) {
-        gameOver("Game over, you've been had by a robot 🤖.");
+        gameOver("Game over, you've been had by a robot 🤖");
     }
 }
 
@@ -72,6 +73,7 @@ function gameOver(message) {
     scissors_div.style.display = 'none';
     lizard_div.style.display = 'none';
     spock_div.style.display = 'none';
+    hypeMessage_div.style.display = 'none';
 
     // Show the play again button
     playAgainButton.style.display = 'block';
