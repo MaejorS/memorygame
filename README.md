@@ -2,6 +2,8 @@
 Rock Paper Scissors Lizard Spock is a fun and engaging extension of the classic Rock-Paper-Scissors game. Designed to reduce the frequency of ties and introduce more strategic play, this game was popularized by Sam Kass and Karen Bryla and gained widespread recognition through its appearance on the TV show "The Big Bang Theory."
 
 # Mockup Screenshots
+Below is the single mockup of the main playing area of the game created using Placeit
+![Project Screenshot](/assets/images/mockuprpsls.png)
 
 # UX
 The Rock Paper Scissors Lizard Spock game was designed with simplicity and user engagement in mind. It features a clean and intuitive interface that allows users to easily make their choice and view the results.
@@ -12,9 +14,10 @@ The design ensures that users can:
 - Get a brief overview of the game's rules and mechanics.
 
 # Colour Scheme
-The chosen color scheme for Rock Paper Scissors Lizard Spock is designed to be vibrant and engaging, while maintaining a clear and readable interface.
+The chosen color scheme for Rock Paper Scissors Lizard Spock is designed to be vibrant and engaging, while maintaining a clear and readable interface. The icons themselves were designed using Canva.
 
 The colors used are as follows:
+- #FFFFFF - General body text and headers.
 - #235789 - Background color.
 - #2d3047 - Header text color.
 - #EF476F - Score labels background color.
