@@ -79,7 +79,7 @@ function gameOver(message) {
     playAgainButton.style.display = 'block';
 }
 
-// Fuction with switch statement to compare user vs computer choice
+// Fuction with switch statement to compare user vs computer choice. Using instead of if/else statement. Learned from youtube tutorial
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
