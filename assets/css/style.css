@@ -18,6 +18,7 @@ header {
 header > h1 {
     color: #2d3047;
     text-align: center;
+    padding: 10px;
 }
 
 /* Scoreboard Styling */
@@ -72,7 +73,7 @@ header > h1 {
 .select-choice {
     margin-top: 50px;
     text-align: center;
-    margin: 50px 0;
+    margin: 20px 0;
     
 }
 
@@ -93,11 +94,17 @@ header > h1 {
 }
 
 /*styling for bottom hype message below icons*/
-#hype-message {
+#hype-message > h1 {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 40px;
+}
+
+#hype-message > p {
+    padding: 20px 50px;
+    text-align: justify;
+    color: white;
 }
 
 #play-again-button {

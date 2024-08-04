@@ -22,43 +22,48 @@ function getComputerChoice() {
     return selectChoice[randomNumber];
 }
 
+// Function checks if game is over if user or computer reaches 20 points
 function checkGameOver() {
     if (userScore === 20) {
-        gameOver("Congratulations, you beat a bot.");
+        gameOver("Congratulations, you beat a bot 🤖.");
     } else if (computerScore === 20) {
-        gameOver("Game over, you've been had by a robot.");
+        gameOver("Game over, you've been had by a robot 🤖.");
     }
 }
 
+// Win function
 function win(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
     userScore++;
     playerScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " beats " + computerChoice + " . YOU WIN!!!";
+    result_p.innerHTML = "🧑" + userChoice + "🧑 BEATS 🤖" + computerChoice + "🤖 . YOU WIN!!!";
     userChoice_div.classList.add('green-glow');
-    setTimeout(function() { userChoice_div.classList.remove('green-glow') }, 2000);
+    setTimeout(function() { userChoice_div.classList.remove('green-glow') }, 500);
     checkGameOver();
 }
 
+// Lose Function
 function lose(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
     computerScore++;
     playerScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " is defeated by " + computerChoice + " . YOU LOSE!!!"
+    result_p.innerHTML = "🧑" + userChoice + "🧑 LOSES TO 🤖" + computerChoice + "🤖 . TOO BAD!!!"
     userChoice_div.classList.add('red-glow');
-    setTimeout(function() { userChoice_div.classList.remove('red-glow') }, 2000);
+    setTimeout(function() { userChoice_div.classList.remove('red-glow') }, 500);
     checkGameOver();
 }
 
+// Draw function
 function draw(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
-    result_p.innerHTML = userChoice + " vs " + computerChoice + " ? TIE!!!"
+    result_p.innerHTML = "🧑" + userChoice + "🧑 VS 🤖" + computerChoice + "🤖 ? TIE!!!"
     userChoice_div.classList.add('gray-glow');
-    setTimeout(function() { userChoice_div.classList.remove('gray-glow') }, 2000);
+    setTimeout(function() { userChoice_div.classList.remove('gray-glow') }, 500);
 }
 
+// Game over function hides all icons and displays message
 function gameOver(message) {
     result_p.innerHTML = message;
     // Hide the game choices
