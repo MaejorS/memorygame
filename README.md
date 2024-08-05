@@ -84,3 +84,22 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 <br>
 
 ![Project Screenshot](/assets/images/divadjust.jpg)
+
+# Validator Testing
+- HTML
+
+- CSS
+
+- JavaScript
+
+# Deployment
+
+# Credits
+## Content
+- Tutorial on switch statements discovered on YouTube tutorial [Bro Code](https://www.youtube.com/watch?v=z2fcWdoph4U)
+- [Free code camp](https://www.youtube.com/@freecodecamp) for styling of the score board.
+## Media
+- Rock paper scissors lizard spock icons were created by me using tools from [Canva](https://www.canva.com/)
+
+# Acknowledgments
+- Thanks to my mentor [Chris Quinn](https://github.com/10xOXR) for planning and helpful feedback throughout the project.
