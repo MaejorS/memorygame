@@ -51,6 +51,31 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 
 <br>
 
+# Features
+- A play again button that allows users to reload the page after 20 points is reach by computer or user.
+<br>
+
+![Project Screenshot](/assets/images/playagainbuttonfeature.jpg)
+
+<br>
+
+- A win/lose color change feature which changes if you lose or win to the computer each round.
+
+<br>
+
+![Project Screenshot](/assets/images/winlosefeature.jpg)
+
+<br>
+
+- A score-board feature, which allows users to see their score against the computer's score.
+
+<br>
+
+![Project Screenshot](/assets/images/scoreboardfeature.jpg)
+
+<br>
+
+
 # Testing
 
 - Firefox, Chrome and Safari were used to test the game.
@@ -79,6 +104,10 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 ![Project Screenshot](/assets/images/lighthousetest.jpg)
 
 <br>
+
+- Used WAVE web accessability evaluation tool to check for accessability issues. A couple of minore notes about an h2 tag and the justified text
+
+![Project Screenshot](/assets/images/wavetest.jpg)
 
 # Bugs and Fixes
 - when creating win function and increase score, console said that there was an invalid assignment to userscore. Changed const userScore and let computerScore to let userScore and let computerScore.
