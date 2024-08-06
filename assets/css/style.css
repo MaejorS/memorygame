@@ -61,7 +61,7 @@ header>h1 {
 .result {
     font-size: 40px;
     color: #ffffff;
-    margin: 5%;
+    margin: 3%;
 }
 
 .result>p {
@@ -113,6 +113,7 @@ header>h1 {
     padding: 20px 50px;
     text-align: justify;
     color: #ffffff;
+    font-size: 18px;
 }
 
 #hype-message>h2 {
@@ -127,7 +128,12 @@ header>h1 {
     text-align: center;
     color: #ffffff;
     font-size: 18px;
-    padding-bottom: 4px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 #play-again-button {
