@@ -60,7 +60,7 @@ header > h1 {
 .result {
     font-size: 40px;
     color: white;
-    
+    margin: 5%;
 }
 
 .result > p {
@@ -86,6 +86,12 @@ header > h1 {
     padding: 10px;
     margin: 10px;
     transition: all 0.3s ease;
+}
+
+.select-choice .choice img {
+    width: 100px; 
+    height: 100px; 
+    
 }
 
 /*hover effect to change background color and pointer*/
@@ -168,3 +174,23 @@ header > h1 {
 
 }
 
+/* Media query: tablets and larger (768px and up) */
+@media (min-width: 768px)  {
+    /* CSS rules for laptop screens */
+    .select-choice .choice img {
+        width: 150px;
+        height: 150px; 
+    }
+   
+    }
+
+    /* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+#hype-message > p {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    color: white;
+}
+}
