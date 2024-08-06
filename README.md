@@ -75,6 +75,11 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 
 <br>
 
+## Future Features
+- An HTML Dialogue feature will allow users to visit the rules and about without it being on the main playing area.
+- A start game function.
+- Sound effects that correlate with the rock paper scissors icons and are played when the player clicks on the icon.
+
 
 # Testing
 
@@ -140,7 +145,8 @@ no errors were found when I put through the HTML validator
 ![Project Screenshot](/assets/images/htmlvalidator.jpg)
 
 <br>
-##  CSS
+
+## CSS
 No errors were found when I put through the CSS validator
 <br>
 
