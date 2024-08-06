@@ -105,7 +105,7 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 
 <br>
 
-- Used WAVE web accessability evaluation tool to check for accessability issues. A couple of minore notes about an h2 tag and the justified text
+- Used [WAVE](https://wave.webaim.org/) web accessability evaluation tool to check for accessability issues. A couple of minore notes about an h2 tag and the justified text
 
 ![Project Screenshot](/assets/images/wavetest.jpg)
 
@@ -157,6 +157,13 @@ I put through JShint and cleared any potential syntax errors as a few semicolons
 <br>
 
 # Deployment
+The site was deployed to GitHub Pages. The steps to deploy are as follows:
+
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Main Branch, then click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://maejors.github.io/memorygame/).
 
 # Credits
 ## Content
