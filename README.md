@@ -45,14 +45,32 @@ Returning Site Users
 # Wireframes
 
 Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://balsamiq.com/) was used to design the wireframes.
+<br>
 
+![Project Screenshot](/assets/images/wireframes.jpg)
+
+<br>
 
 # Testing
 
 - Firefox, Chrome and Safari were used to test the game.
 - Scores increment properly, game over function works and play again button reloads the page;.
 - I tested to make sure that the hover action feature worked by hovering over each icon on desktop or where a pointer is used.
+<br>
+
+![Project Screenshot](/assets/images/hovereffecttest.png)
+
+<br>
 - I tested to make sure that icons change color depending on whether user wins or loses to the computer.
+<br>
+
+![Project Screenshot](/assets/images/losecolortest.png)
+
+<br>
+
+![Project Screenshot](/assets/images/wincolortest.png)
+
+<br>
 - The header, about, rules and text are all readable.
 - Using lighthouse, colors and fonts are accessable.
 
@@ -86,11 +104,28 @@ Wireframes were developed for mobile, tablet and desktop. [Balsamiq](https://bal
 ![Project Screenshot](/assets/images/divadjust.jpg)
 
 # Validator Testing
-- HTML
+## HTML
+no errors were found when I put through the HTML validator
+<br>
 
-- CSS
+![Project Screenshot](/assets/images/htmlvalidator.jpg)
 
-- JavaScript
+<br>
+##  CSS
+No errors were found when I put through the CSS validator
+<br>
+
+![Project Screenshot](/assets/images/cssvalidator.jpg)
+
+<br>
+
+## JavaScript
+I put through JShint and cleared any potential syntax errors as a few semicolons were missing
+<br>
+
+![Project Screenshot](/assets/images/jshintcheck.jpg)
+
+<br>
 
 # Deployment
 
