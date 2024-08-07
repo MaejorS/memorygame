@@ -16,78 +16,84 @@
 <!-- Main Content -->
 
 <body>
-    <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+        </header>
+        <main>
+            <!-- Scoreboard -->
+            <div class="score-area">
+                <div id="user-label" class="badge">🧑</div>
+                <div id="computer-label" class="badge">🤖</div>
+                <span id="player-score">0</span>:<span id="computer-score">0</span>
+            </div>
 
-    <!-- Scoreboard -->
-    <div class="score-area">
-        <div id="user-label" class="badge">🧑</div>
-        <div id="computer-label" class="badge">🤖</div>
-        <span id="player-score">0</span>:<span id="computer-score">0</span>
+            <!-- Playing Area -->
+            <div class="result">
+                <p>Give it your best shot!</p>
+            </div>
+
+            <!-- Rock Paper Scissors Lizard Spock Icons -->
+            <div class="select-choice">
+                <div class="choice" id="rock">
+                    <img src="assets/images/rock.png" alt="rock">
+                </div>
+                <div class="choice" id="paper">
+                    <img src="assets/images/papers.png" alt="paper">
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="assets/images/scissors.png" alt="scissors">
+                </div>
+                <div class="choice" id="lizard">
+                    <img src="assets/images/lizard.png" alt="lizard">
+                </div>
+                <div class="choice" id="spock">
+                    <img src="assets/images/spock.png" alt="spock">
+                </div>
+            </div>
+
+            <!-- Hype Message -->
+
+            <div id="hype-message">
+                <h1>About The Game</h1>
+                <p>Rock-Paper-Scissors-Lizard-Spock is an engaging extension of the classic game Rock-Paper-Scissors,
+                    designed
+                    to reduce the frequency of ties and introduce more strategic play. The game was popularized by Sam
+                    Kass and
+                    Karen Bryla and gained widespread recognition through its appearance on the TV show "The Big Bang
+                    Theory."
+                </p>
+                <h2>Rules</h2>
+                <ul>
+                    <li>Rock crushes Scissors</li>
+                    <li>Scissors cuts Paper</li>
+                    <li>Paper covers Rock</li>
+                    <li>Rock crushes Lizard</li>
+                    <li>Lizard poisons Spock</li>
+                    <li>Spock smashes Scissors</li>
+                    <li>Scissors decapitates Lizard</li>
+                    <li>Lizard eats Paper</li>
+                    <li>Paper disproves Spock</li>
+                    <li>Spock vaporizes Rock</li>
+                </ul>
+            </div>
+
+            <div class="gameoverbutton">
+                <button id="play-again-button" style="display: none;">Play Again</button>
+            </div>
+        </main>
+        <footer>
+
+            <!-- Footer -->
+            <div class="footer-content">
+                <p>&copy; 2024 Rock Paper Scissors Lizard Spock Game. All rights reserved.</p>
+                <p>Created by Megan Saenz</p>
+                <p>
+                    <a href="https://github.com/MaejorS" target="_blank">GitHub</a> 
+                </p>
+            </div>
+        </footer>
     </div>
-
-    <!-- Playing Area -->
-    <div class="result">
-        <p>Give it your best shot!</p>
-    </div>
-
-    <!-- Rock Paper Scissors Lizard Spock Icons -->
-    <div class="select-choice">
-        <div class="choice" id="rock">
-            <img src="assets/images/rock.png" alt="rock">
-        </div>
-        <div class="choice" id="paper">
-            <img src="assets/images/papers.png" alt="paper">
-        </div>
-        <div class="choice" id="scissors">
-            <img src="assets/images/scissors.png" alt="scissors">
-        </div>
-        <div class="choice" id="lizard">
-            <img src="assets/images/lizard.png" alt="lizard">
-        </div>
-        <div class="choice" id="spock">
-            <img src="assets/images/spock.png" alt="spock">
-        </div>
-    </div>
-
-    <!-- Hype Message -->
-
-    <div id="hype-message">
-        <h1>About The Game</h1>
-        <p>Rock-Paper-Scissors-Lizard-Spock is an engaging extension of the classic game Rock-Paper-Scissors, designed
-            to reduce the frequency of ties and introduce more strategic play. The game was popularized by Sam Kass and
-            Karen Bryla and gained widespread recognition through its appearance on the TV show "The Big Bang Theory."
-        </p>
-        <h2>Rules</h2>
-        <ul>
-            <li>Rock crushes Scissors</li>
-            <li>Scissors cuts Paper</li>
-            <li>Paper covers Rock</li>
-            <li>Rock crushes Lizard</li>
-            <li>Lizard poisons Spock</li>
-            <li>Spock smashes Scissors</li>
-            <li>Scissors decapitates Lizard</li>
-            <li>Lizard eats Paper</li>
-            <li>Paper disproves Spock</li>
-            <li>Spock vaporizes Rock</li>
-        </ul>
-    </div>
-
-    <div class="gameoverbutton">
-        <button id="play-again-button" style="display: none;">Play Again</button>
-    </div>
-    <footer>
-
-        <!-- Footer -->
-        <div class="footer-content">
-            <p>&copy; 2024 Rock Paper Scissors Lizard Spock Game. All rights reserved.</p>
-            <p>Created by Megan Saenz</p>
-            <p>
-                <a href="https://github.com/MaejorS" target="_blank">GitHub</a> |
-            </p>
-        </div>
-    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
