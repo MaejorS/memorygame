@@ -63,14 +63,12 @@ header>h1 {
     position: absolute;
     top: 30px;
     left: -25px;
-
 }
 
 #computer-label {
     position: absolute;
     top: 30px;
     right: -30px;
-
 }
 
 .result {
@@ -82,8 +80,6 @@ header>h1 {
 .result>p {
     text-align: center;
     font-weight: bold;
-
-
 }
 
 /*Playing area style.*/
@@ -91,7 +87,6 @@ header>h1 {
     margin-top: 50px;
     text-align: center;
     margin: 20px 0;
-
 }
 
 /*styling for rock paper scissor lizard spock icons*/
@@ -107,7 +102,6 @@ header>h1 {
 .select-choice .choice img {
     width: 100px;
     height: 100px;
-
 }
 
 /* Footer style */
